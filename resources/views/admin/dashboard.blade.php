@@ -101,6 +101,7 @@
                         <span class="sidebar-text">Dashboard</span>
                     </a>
                 </li>
+                
                 <li class="nav-item">
                     <span class="nav-link  collapsed  d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#submenu-app">
                         <span>
@@ -152,7 +153,7 @@
             </ul>
         </div>
     </nav>
-    
+
 	<main class="content">
 
 		<nav class="navbar navbar-top navbar-expand navbar-dashboard navbar-dark ps-0 pe-2 pb-0">

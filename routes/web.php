@@ -5,6 +5,9 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MahasiswaController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\PelangganController;
+
+Route::resource('pelanggan', PelangganController::class);
 
 Route::get('dashboard', [DashboardController::class, 'index']) ->name('dashboard');
 
@@ -25,7 +28,7 @@ Route::get('/nim/{param1?}', function ($param1 = '') {
 });
 
 Route::get('/mahasiswa', function () {
-    
+
 })->name('mahasiswa.show');
 
 Route::get('/mahasiswa/{param1}', [MahasiswaController::class, 'show']);
