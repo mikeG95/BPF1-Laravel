@@ -10,7 +10,10 @@ use App\Http\Controllers\QuestionController;
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PelangganController;
+use App\Http\Controllers\UserController;
 
+
+Route::resource('user', UserController::class);
 
 Route::post('question/store', [QuestionController::class, 'store'])
 		->name('question.store');
